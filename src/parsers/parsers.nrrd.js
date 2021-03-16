@@ -189,7 +189,8 @@ export default class ParsersNifti extends ParsersVolume {
       this._dataSet.spaceDirections[2][2]
     );
 
-    return [x.length(), y.length(), z.length()];
+    // X,Y is different in AMI.js because it uses DICOM. See ijk2LPS computation becomes invalid when using x, y
+    return [y.length(), x.length(), z.length()];
   }
 
   /**
