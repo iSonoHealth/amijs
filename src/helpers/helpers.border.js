@@ -1,8 +1,9 @@
 /**
  * @module helpers/border
  */
+import * as THREE from 'three';
 
-const helpersBorder = (three = window.THREE) => {
+const helpersBorder = (three = window.THREE || THREE) => {
   if (three === undefined || three.Object3D === undefined) {
     return null;
   }
@@ -68,7 +69,7 @@ const helpersBorder = (three = window.THREE) => {
       }
 
       this._geometry = new three.BufferGeometry();
-  
+
       // set vertices positions
       const nbOfVertices = this._helpersSlice.geometry.vertices.length;
       const positions = new Float32Array((nbOfVertices + 1) * 3);

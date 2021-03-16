@@ -2,6 +2,7 @@
  * @module helpers/x/renderer3d
  */
 import ControlsTrackball from '../../controls/controls.trackball';
+import * as THREE from 'three';
 
 export default class {
   constructor(containerId = 'r3d') {

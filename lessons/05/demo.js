@@ -6,6 +6,7 @@ var CamerasOrthographic = AMI.OrthographicCamera;
 var ControlsOrthographic = AMI.TrackballOrthoControl;
 var HelpersStack = AMI.StackHelper;
 var ModelsStack = AMI.StackModel;
+import * as THREE from 'three';
 
 var stack0, stackHelper0;
 var stack1, stackHelper1;

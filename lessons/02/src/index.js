@@ -1,4 +1,5 @@
 import { files, stlModel, colors } from './utils';
+import * as THREE from 'three';
 
 // Classic ThreeJS setup
 const container = document.getElementById('container');

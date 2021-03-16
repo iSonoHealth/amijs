@@ -5,12 +5,13 @@ import ShadersVertex from '../shaders/shaders.data.vertex';
 import ShadersFragment from '../shaders/shaders.data.fragment';
 
 import { helpersMaterialMixin } from '../helpers/helpers.material.mixin';
+import * as THREE from 'three';
 
 /**
  * @module helpers/slice
  */
 
-const helpersSlice = (three = window.THREE) => {
+const helpersSlice = (three = window.THREE || THREE) => {
   if (three === undefined || three.Object3D === undefined) {
     return null;
   }

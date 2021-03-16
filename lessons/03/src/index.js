@@ -1,4 +1,5 @@
 import { colors, file } from './utils';
+import * as THREE from 'three';
 
 // Setup renderer
 const container = document.getElementById('container');

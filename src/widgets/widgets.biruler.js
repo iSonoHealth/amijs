@@ -1,10 +1,11 @@
 import { widgetsBase } from './widgets.base';
 import { widgetsHandle as widgetsHandleFactory } from './widgets.handle';
+import * as THREE from 'three';
 
 /**
  * @module widgets/biruler
  */
-const widgetsBiruler = (three = window.THREE) => {
+const widgetsBiruler = (three = window.THREE || THREE) => {
   if (three === undefined || three.Object3D === undefined) {
     return null;
   }

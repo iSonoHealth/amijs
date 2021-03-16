@@ -41,8 +41,9 @@ import coreUtils from '../core/core.utils';
  *  let slice = new THREE.Mesh(sliceGeometry, sliceMaterial);
  *  scene.add(slice);
  */
+import * as THREE from 'three';
 
-const geometriesSlice = (three = window.THREE) => {
+const geometriesSlice = (three = window.THREE || THREE) => {
   if (three === undefined || three.ShapeBufferGeometry === undefined) {
     return null;
   }

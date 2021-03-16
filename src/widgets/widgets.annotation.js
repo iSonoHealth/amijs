@@ -1,11 +1,12 @@
 import { widgetsBase } from './widgets.base';
 import { widgetsHandle as widgetsHandleFactory } from './widgets.handle';
+import * as THREE from 'three';
 
 /**
  * @module widgets/annotation
  * @todo: add option to show only label (without mesh, dots and lines)
  */
-const widgetsAnnotation = (three = window.THREE) => {
+const widgetsAnnotation = (three = window.THREE || THREE) => {
   if (three === undefined || three.Object3D === undefined) {
     return null;
   }

@@ -3,6 +3,7 @@
 import ControlsTrackball from 'base/controls/controls.trackball';
 import HelpersStack from 'base/helpers/helpers.stack';
 import LoadersVolume from 'base/loaders/loaders.volume';
+import * as THREE from 'three';
 
 // standard global variables
 let controls;

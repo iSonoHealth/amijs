@@ -4,6 +4,7 @@ import ControlsTrackball from 'base/controls/controls.trackball';
 import HelpersLut from 'base/helpers/helpers.lut';
 import HelpersVR from 'base/helpers/helpers.volumerendering';
 import LoadersVolume from 'base/loaders/loaders.volume';
+import * as THREE from 'three';
 
 // standard global letiables
 let controls, threeD, renderer, stats, camera, scene;

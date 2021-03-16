@@ -1,4 +1,5 @@
 import CoreUtils from '../core/core.utils';
+import * as THREE from 'three';
 
 let defaultSegmentation = {
   0: { color: [0, 0, 0], opacity: 0, label: 'background' },

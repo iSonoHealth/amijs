@@ -8,8 +8,9 @@ import { helpersMaterialMixin } from '../helpers/helpers.material.mixin';
 /**
  * @module helpers/volumerendering
  */
+import * as THREE from 'three';
 
-const helpersVolumeRendering = (three = window.THREE) => {
+const helpersVolumeRendering = (three = window.THREE || THREE) => {
   if (three === undefined || three.Object3D === undefined) {
     return null;
   }

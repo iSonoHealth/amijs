@@ -14,6 +14,7 @@ import WidgetsPolygon from 'base/widgets/widgets.polygon';
 import WidgetsRectangle from 'base/widgets/widgets.rectangle';
 import WidgetsRuler from 'base/widgets/widgets.ruler';
 import WidgetsVoxelProbe from 'base/widgets/widgets.voxelProbe';
+import * as THREE from 'three';
 
 // standard global variables
 let controls;

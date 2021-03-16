@@ -14,8 +14,9 @@
 //    Pan - right mouse, or left mouse + ctrl/meta/shiftKey, or arrow keys / touch: two-finger move
 
 // adapted from https://github.com/mrdoob/three.js/blob/dev/examples/jsm/controls/OrbitControls.js
+import * as THREE from 'three';
 
-const orbit = (three = window.THREE) => {
+const orbit = (three = window.THREE || THREE) => {
     if (three === undefined || three.EventDispatcher === undefined) {
       return null;
     }
@@ -130,7 +131,7 @@ var OrbitControls = function ( object, domElement ) {
 		state = STATE.NONE;
 
     };
-    
+
     // this method is there to match the Trackball API
     this.handleResize = function () {
 

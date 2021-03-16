@@ -1,11 +1,12 @@
 import { widgetsBase } from './widgets.base';
 import { widgetsHandle as widgetsHandleFactory } from './widgets.handle';
 import CoreUtils from '../core/core.utils';
+import * as THREE from 'three';
 
 /**
  * @module widgets/velocityTimeIntegral
  */
-const widgetsVelocityTimeIntegral = (three = window.THREE) => {
+const widgetsVelocityTimeIntegral = (three = window.THREE || THREE) => {
   if (three === undefined || three.Object3D === undefined) {
     return null;
   }

@@ -1,4 +1,5 @@
 'use strict';
+import * as THREE from 'three';
 THREE.FreeSurferLoader = function() {};
 
 Object.assign(THREE.FreeSurferLoader.prototype, THREE.EventDispatcher.prototype, {

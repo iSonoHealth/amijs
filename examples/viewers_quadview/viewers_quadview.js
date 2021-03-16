@@ -9,6 +9,7 @@ import HelpersContour from 'base/helpers/helpers.contour';
 import HelpersLocalizer from 'base/helpers/helpers.localizer';
 import HelpersStack from 'base/helpers/helpers.stack';
 import LoadersVolume from 'base/loaders/loaders.volume';
+import * as THREE from 'three';
 
 // standard global variables
 let stats;
